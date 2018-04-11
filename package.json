@@ -1,11 +1,12 @@
 {
   "name": "har-server",
-  "version": "0.4.3",
+  "version": "0.5.0",
   "description": "Server resources from a HAR file",
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "docs": "node node_modules/jsdoc-to-markdown/bin/cli.js lib/harServer.js > API.md"
+    "docs": "node node_modules/jsdoc-to-markdown/bin/cli.js lib/harServer.js > API.md",
+    "start": "node bin/cli.js"
   },
   "bin": {
     "har-server": "bin/cli.js"
@@ -18,9 +19,9 @@
   "license": "MIT",
   "dependencies": {
     "bluebird": "^3.3.4",
-    "har-validator": "^3.3.0",
+    "har-validator": "5.1.0",
     "hostile": "^1.0.2",
-    "is-root": "^1.0.0",
+    "is-root": "2.0.0",
     "lodash": "^4.6.1",
     "pem": "^1.8.1",
     "yargs": "^4.3.2"
